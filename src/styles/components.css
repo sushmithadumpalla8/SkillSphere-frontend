@@ -1,0 +1,106 @@
+/* Custom Buttons */
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  transition: var(--transition);
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  font-weight: 600;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+/* Custom Cards */
+.card-custom {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.card-custom:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.course-card-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+}
+
+/* Stat Cards */
+.stat-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.stat-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+/* Badges */
+.badge-beginner {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-intermediate {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.badge-advanced {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Custom Progress Bar */
+.progress-custom {
+  height: 10px;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-subtle);
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}

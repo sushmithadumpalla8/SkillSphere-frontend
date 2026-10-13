@@ -1,0 +1,102 @@
+/* Auth Split Screen */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.auth-sidebar {
+  flex: 1;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.auth-form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: var(--bg-main);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 2.5rem;
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+/* Certificate Styling */
+.certificate-frame {
+  border: 12px double #1e3a8a;
+  padding: 3rem;
+  background: #ffffff;
+  position: relative;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.certificate-seal {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #f59e0b, #d97706);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+/* Material Viewer Layout */
+.materials-layout {
+  display: flex;
+  min-height: calc(100vh - 140px);
+  background: var(--bg-main);
+}
+
+.materials-sidebar {
+  width: 340px;
+  background: white;
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.materials-content {
+  flex: 1;
+  padding: 2.5rem;
+  overflow-y: auto;
+}
+
+/* Printable Certificate Media */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .certificate-frame, .certificate-frame * {
+    visibility: visible;
+  }
+  .certificate-frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
